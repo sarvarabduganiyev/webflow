@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+:root {
+  --customPurple: #b99df1;
+  --white: #fff;
+  --black: #000;
+  --customBlue: #3b72e0;
+  --customBlue2: #263554;
+  --accColor: #56637b;
+  --graycustomcolor: #cdd3de;
+  --inrtoTitle: #233456;
+  --challangeSection: #f5f5f5;
+  --challangeColor: #247dfa;
+  --challangeColorP: #263554;
+  --mainbannercolor: #2f63ce;
+  --footerColor1: #6f7d9a;
+  --footerColor2: #183b56;
+  --footerLineColor:rgba(59, 38, 84, 0.14);
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.center-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

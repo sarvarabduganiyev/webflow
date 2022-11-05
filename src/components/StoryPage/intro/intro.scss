@@ -1,0 +1,60 @@
+.intro-bg {
+  background-image: url("../../../assets/img/introBg.png");
+  background-position: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  min-height: 800px;
+}
+.intro-content {
+  padding-top: 60px;
+}
+.intro-content h1 {
+  text-align: center;
+  width: 800px;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-top: 40px;
+  color: var(--inrtoTitle);
+}
+@media (max-width: 896px) {
+  .intro-content {
+    padding-top: 40px;
+  }
+  .intro-content h1 {
+    width: initial;
+    margin-top: 25px;
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .intro-bg {
+    min-height: 700px;
+  }
+  .intro-content h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 740px) {
+  .intro-bg {
+    min-height: 670px;
+  }
+  .intro-content h1 {
+    font-size: 32px;
+    margin-top: 15px;
+  }
+  .intro-bg {
+    background-image: url("../../../assets/img/mobileIntro.png");
+  }
+}
+@media (max-width: 422px) {
+  .intro-bg {
+    background-image: url("../../../assets/img/mobileIntro.png");
+    min-height: 631px;
+  }
+  .intro-content h1 {
+    font-size: 29px;
+  }
+}

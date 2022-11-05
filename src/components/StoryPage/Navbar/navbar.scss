@@ -1,0 +1,247 @@
+nav {
+  padding: 24px 75px;
+  font-family: "Poppins";
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+.responsiveContent {
+  display: none;
+}
+.dropdown-icon {
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+}
+.dropdown-icon:hover,
+.dropdown-icon:active,
+.dropdown-icon:focus {
+  background-color: white !important;
+  color: initial !important;
+}
+
+//  middle content
+.nav-middle-content ul {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.nav-middle-content ul li {
+  margin-left: 40px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.nav-drop-arrow {
+  margin-left: 7px;
+}
+
+// end content
+
+.nav-btns-box button {
+  padding: 13px 19px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nav-btns-box button:nth-child(2) {
+  margin: 0px 10px;
+  border: none;
+  background-color: var(--customBlue);
+  color: var(--white);
+}
+.nav-btns-box button:nth-child(3) {
+  color: var(--white);
+  border: none;
+  background-color: var(--customPurple);
+}
+.nav-btns-box button:nth-child(1) {
+  color: var(--customBlue);
+  border: 1px solid var(--customBlue);
+}
+.burger-menu-wrapper {
+  display: none;
+}
+
+.cansel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cansel-wrapper h1 {
+  color: var(--customBlue2);
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-top: 5px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+  border: none;
+}
+
+.accordion-item {
+  border: none;
+}
+.accordion-body {
+  padding: 0px;
+}
+.responsive-lists {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #233456;
+}
+.responsive-lists:nth-child(2) {
+  margin: 32px 0px;
+}
+
+.accordion-button:hover,
+.accordion-button .accordion-button:focus,
+.accordion-button:active {
+  background-color: transparent !important;
+  color: initial !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--black);
+  background-color: transparent;
+}
+.accordion-button {
+  padding: 20px 0px;
+}
+
+.accardion-title {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  background-color: white;
+  color: var(--accColor);
+}
+.hr-line {
+  margin: 55px 0px 15px 0px;
+}
+.responive-section-links {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #233456;
+  padding: 16px 0px 40px 0px;
+  border-top: 1px solid var(--graycustomcolor);
+}
+.responsive-btns-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: color;
+  margin-top: 200px;
+}
+.responsive-btns-box button {
+  font-family: "Poppins";
+  padding: 13px 0px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  line-height: 24px;
+}
+.responsive-btns-box button:nth-child(1) {
+  color: var(--customBlue);
+  border: 1px solid var(--customBlue);
+}
+.responsive-btns-box button:nth-child(2) {
+  background-color: var(--customBlue);
+  color: var(--white);
+  margin: 10px 0px 10px 0px;
+}
+.responsive-btns-box button:nth-child(3) {
+  background-color: var(--customPurple);
+}
+// MEDIA
+@media (max-width: 1266px) {
+  nav {
+    padding: 24px 50px 26px 50px;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .nav-middle-content ul li {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1086px) {
+  .nav-btns-box button {
+    padding: 8px 15px;
+  }
+  .nav-middle-content ul {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 1028px) {
+  .logo-nav-img {
+    width: 187px;
+  }
+  .nav-middle-content ul li {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .burger-menu-wrapper {
+    display: block;
+    width: 50px;
+  }
+  .nav-middle-content,
+  .nav-btns-box {
+    display: none;
+  }
+  .responsiveContent {
+    display: block;
+    position: fixed;
+    background-color: var(--white);
+    left: -100%;
+    top: 0;
+    transition: 0.3s ease-in;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 25px;
+    z-index: 1;
+  }
+  .responsiveContenActive {
+    left: 0;
+  }
+  .nav-wrapper {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    padding: 24px 30px;
+    font-family: "Poppins";
+  }
+}
+@media (max-width: 400px) {
+  .logo-nav-img {
+    width: 130px;
+  }
+  .nav-wrapper {
+    padding: 0px 15px;
+  }
+  .burger-menu-wrapper img {
+    width: 35px;
+  }
+  nav {
+    padding: 24px 15px;
+  }
+}
