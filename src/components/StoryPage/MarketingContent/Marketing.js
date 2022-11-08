@@ -7,6 +7,7 @@ import {
   MarketingIconSix,
 } from "../../../assets/svg/icons";
 import "./Marketing.scss";
+import MarketingBanner from "./MarketingBanner";
 const MarketingCardInner = ({ text, icon, spanText }) => {
   return (
     <div className="maketing-card-inner">
@@ -68,13 +69,7 @@ function Marketing() {
           <button>Learn How BirdsAI Can help you</button>
         </div>
       </div>
-      <div className="marketingBanner container">
-        <h1>Get started with Birdseye Global</h1>
-        <div className="marketingBanner-btn-box">
-          <button>Start free trial</button>
-          <button>Schedule a Demo</button>
-        </div>
-      </div>
+      <MarketingBanner />
     </section>
   );
 }

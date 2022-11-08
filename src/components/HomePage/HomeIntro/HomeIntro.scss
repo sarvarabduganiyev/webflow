@@ -1,0 +1,128 @@
+.homeIntroBg {
+  background-image: url("../../../assets/img/HomeIntro.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 800px;
+  background-color: var(--homePageBg);
+}
+.homeIntroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  padding-top: 76px;
+}
+.homeIntroBg h1 {
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 74px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--white);
+}
+.homeIntroBg h1 span {
+  font-weight: 600;
+}
+.homeIntroBg p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: var(--white);
+  opacity: 0.9;
+  margin-top: 24px;
+}
+.home-into-btn-wrapper {
+  display: flex;
+}
+.home-into-btn-wrapper button {
+  font-family: "Poppins";
+  padding: 18px 40px;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.home-into-btn-wrapper button:nth-child(1) {
+  color: #3b72e0;
+  background-color: var(--white);
+}
+.home-into-btn-wrapper button:nth-child(2) {
+  color: var(--white);
+  border: 1px solid var(--white);
+  margin-left: 20px;
+}
+.home-gage-illustration-img {
+  // animation: bounce 5s infinite;
+  transform: translateY(200px);
+}
+
+@media (max-width: 920px) {
+  .home-gage-illustration-img {
+    width: 100%;
+    height: auto;
+  }
+  .homeIntroContent {
+    width: initial;
+    padding: 68px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 583px) {
+  .homeIntroBg h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .homeIntroBg p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .homeIntroContent {
+    width: initial;
+    padding: 68px 30px 0px 30px;
+  }
+  .home-into-btn-wrapper {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .home-into-btn-wrapper button:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .homeIntroBg {
+    background-image: url("../../../assets/img/HomeIntroResponsive.png");
+    height: 700px;
+  }
+  .home-gage-illustration-img {
+    transform: translateY(100px);
+  }
+}
+@media (max-width: 400px) {
+  .homeIntroBg {
+    min-height: 853px;
+    height: 853px;
+  }
+  .home-gage-illustration-img {
+    transform: translateY(35px);
+  }
+}
+
+// @keyframes bounce {
+//   0%,
+//   100% {
+//     transform: translateY(-200px);
+//     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+//   }
+//   50% {
+//     transform: translateY(180px);
+//     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+//   }
+// }

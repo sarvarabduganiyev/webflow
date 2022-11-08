@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -21,6 +24,8 @@
   --footerColor1: #6f7d9a;
   --footerColor2: #183b56;
   --footerLineColor:rgba(59, 38, 84, 0.14);
+  --homePageBg:#F2FAFF;
+  --home-page-blue:#3367D2;
 }
 button {
   outline: none;
