@@ -4,7 +4,7 @@
   background-position: center;
   background-color: #f2faff;
   background-size: 100% 100%;
-  height: 1500px;
+  min-height: 1500px;
   padding: 76px 150px 80px 150px;
 }
 .pricing-title-box {
@@ -73,14 +73,24 @@
   border: 1px solid #c7f3d3;
   border-radius: 52px;
   margin-left: 25px;
+  font-weight: 700;
+  line-height: 22px;
 }
 .pricing-order-card-wrapper {
   display: grid;
-  grid-template-columns: calc(33.3% - 13px) calc(33.3% - 13px) calc(
-      33.3% - 13px
-    );
-  gap: 39px;
+  align-items: start;
+  grid-template-columns: calc(33% - 13px) calc(33% - 13px) calc(33% - 13px);
+  gap: 30px;
   font-family: "Poppins";
+  margin-top: 43px;
+}
+.price-order-title-word {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 32px 0px;
+  color: #233456;
 }
 .pricing-oreder-card {
   padding: 32px 30px 22px 30px;
@@ -123,13 +133,14 @@
 }
 .price-order-chance-wrapper {
   display: flex;
+  flex-direction: column;
 }
 .price-order-chance-wrapper p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #263554;
-  margin-left: 13px;
+  margin-left: 5px;
 }
 .pricing-oreder-card-last-button {
   padding: 12px 0px;
@@ -141,4 +152,110 @@
   background: #3b72e0;
   border-radius: 4px;
   margin-top: 24px;
+}
+.price-order-chance {
+  display: flex;
+}
+
+.pricing-oreder-card {
+  padding: 32px 20px 22px 20px;
+}
+
+@media (max-width: 1280px) {
+  .pricing-bg-wrapper {
+    padding: 76px 70px 80px 70px;
+  }
+}
+@media (max-width: 1158px) {
+  .pricing-order-card-wrapper {
+    gap: 18px;
+  }
+}
+@media (max-width: 1110px) {
+  .pricing-oreder-card h1 {
+    font-size: 29px;
+    line-height: 88%;
+  }
+  .pricing-oreder-card-first-button {
+    font-size: 13px;
+    line-height: 24px;
+    padding: 4px 0px;
+    margin-top: 10px;
+  }
+  .price-order-title-word {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 20px 0px;
+  }
+  .pricing-oreder-card-description {
+    padding: 17px 0px;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .price-order-chance-wrapper p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .pricing-oreder-card-last-button {
+    padding: 4px 0px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pricing-bg-wrapper {
+    padding: 76px 50px 80px 50px;
+  }
+}
+@media (max-width: 900px) {
+  .pricing-order-card-wrapper {
+    align-items: initial;
+    grid-template-columns: calc(50% - 9px) calc(50% - 9px);
+  }
+  .pricing-oreder-card:nth-child(1) {
+    position: relative;
+  }
+  .pricing-oreder-card:nth-child(1) .pricing-oreder-card-last-button {
+    position: absolute;
+    bottom: 22px;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .pricing-order-card-wrapper {
+    align-items: start;
+    grid-template-columns: 100%;
+    column-gap: 0;
+    row-gap: 18px;
+  }
+  .pricing-oreder-card:nth-child(1) {
+    position: static;
+  }
+  .pricing-oreder-card:nth-child(1) .pricing-oreder-card-last-button {
+    position: static;
+    width: 100%;
+  }
+  .pricing-bg-wrapper {
+    background-image: url("../../../assets/img/priceOrderResponsiveimage.png");
+    min-height: 800px;
+  }
+  .pricing-title {
+    font-size: 48px;
+    line-height: 56px;
+    width: initial;
+  }
+  .price-role-btn-wrapper button:nth-child(2) {
+    margin-left: 10px;
+  }
+  .order-notification-text-wrapper {
+    flex-direction: column;
+  }
+  .order-notification-text-wrapper h4:nth-child(2) {
+    margin-top: 25px;
+  }
+  .pricing-bg-wrapper {
+    padding: 76px 30px 80px 30px;
+  }
 }

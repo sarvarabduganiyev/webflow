@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import Storypage from "./pages/Storypage";
+import Merchant from "./pages/Merchant";
+import Landing from "./pages/Landing";
 const routes = [
   {
     path: "/",
@@ -14,6 +16,14 @@ const routes = [
   {
     path: "/price",
     element: <Pricing />,
+  },
+  {
+    path: "/merchant",
+    element: <Merchant />,
+  },
+  {
+    path: "/landing",
+    element: <Landing />,
   },
 ];
 function App() {

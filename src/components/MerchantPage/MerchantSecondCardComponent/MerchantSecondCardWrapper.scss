@@ -1,0 +1,78 @@
+.marchant-second-card-grid-system {
+  display: grid;
+  grid-template-columns: calc(50% - 50px) calc(50% - 50px);
+  gap: 100px;
+  font-family: "Poppins";
+}
+.merchant-grid-first {
+  margin-top: 280px;
+}
+.merchant-grid-last {
+  margin-top: 50px;
+}
+.marchant-second-card-grid-system img {
+  width: 100%;
+  height: auto;
+}
+.merchant-second-card-grid-first-section {
+  align-items: flex-start;
+}
+.merchant-second-card-grid-first-section h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  color: #263554;
+}
+.merchant-second-card-grid-first-section h1 span {
+  font-weight: 700;
+  color: #3b72e0;
+}
+.merchant-second-card-grid-first-section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  text-transform: capitalize;
+  color: #73809a;
+  width: 437px;
+  margin-top: 16px;
+}
+.merchant-second-card-grid-first-section button {
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #006eff;
+}
+.merchant-second-card-grid-first-section button:hover {
+  text-decoration: underline;
+}
+.merchant-second-card-grid-first-section button svg {
+  margin-left: 9px;
+}
+@media (max-width: 1220px) {
+  .merchant-second-card-grid-first-section p {
+    width: initial;
+  }
+}
+@media (max-width: 991px) {
+  .marchant-second-card-grid-system {
+    grid-template-columns: calc(50% - 25px) calc(50% - 25px);
+    gap: 50px;
+  }
+}
+@media (max-width: 786px) {
+  .marchant-second-card-grid-system {
+    grid-template-columns: calc(100% - 25px);
+    gap: 50px;
+  }
+  .merchant-grid-first {
+    margin-top: 45px;
+  }
+  .merchant-grid-first {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}

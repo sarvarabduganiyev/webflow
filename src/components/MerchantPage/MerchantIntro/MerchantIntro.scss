@@ -1,0 +1,95 @@
+.merchant-intro-wrapper {
+  background-image: url("../../../assets/img/merchantbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 1600px;
+  padding: 70px 160px 80px 160px;
+}
+
+.merchant-intro-title-wrapper h1 {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #263554;
+}
+.merchant-intro-title-wrapper h1 span {
+  font-weight: 700;
+}
+.merchant-intro-title-wrapper p {
+  text-align: center;
+  width: 936px;
+}
+
+// Card
+.merchant-card-grid-wrapper {
+  display: grid;
+  grid-template-columns: calc(50% - 16px) calc(50% - 16px);
+  gap: 32px;
+  margin-top: 70px;
+}
+.merchant-intro-inner-card {
+  padding: 36px;
+  background: var(--white);
+  box-shadow: 3px 12px 50px rgba(98, 111, 180, 0.08);
+  border-radius: 8px;
+}
+.merchant-intro-inner-card:nth-child(even) {
+  transform: translateY(90px);
+}
+.merchant-intro-inner-card h3 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #263554;
+  margin-top: 25px;
+}
+.merchant-intro-inner-card p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #73809a;
+  margin-top: 16px;
+}
+
+// Media
+@media (max-width: 1280px) {
+  .merchant-intro-wrapper {
+    padding: 70px 100px 80px 100px;
+  }
+  .merchant-intro-title-wrapper p {
+    width: initial;
+  }
+}
+@media (max-width: 991px) {
+  .merchant-intro-wrapper {
+    padding: 70px 50px 80px 50px;
+  }
+}
+
+@media (max-width: 786px) {
+  .merchant-card-grid-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 52px;
+    gap: 0px;
+  }
+  .merchant-intro-inner-card {
+    margin-top: 18px;
+  }
+  .merchant-intro-inner-card:nth-child(even) {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 576px) {
+  .merchant-intro-wrapper {
+    padding: 70px 30px 80px 30px;
+  }
+}
