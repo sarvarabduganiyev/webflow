@@ -14,14 +14,14 @@
 }
 .girl-content-grid h1 span {
   font-weight: 700;
-  color: #3b72e0;
+  color: var(--customBlue);
 }
 .girl-content-grid p {
   font-weight: 400;
   font-size: 17px;
   line-height: 150%;
   text-transform: capitalize;
-  color: #73809a;
+  color: var(--home-blog-description);
 }
 .girl-content-grid img {
   width: 400px;

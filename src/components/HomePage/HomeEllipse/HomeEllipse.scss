@@ -10,10 +10,10 @@
 
 .ellipse-title-wrapper button {
   padding: 4px 14px;
-  box-shadow: 0px 20px 60px rgba(64, 123, 242, 0.2);
+  box-shadow: 0px 20px 60px var(--home-blog-shadow);
   border-radius: 5px;
-  background: #ebe9fa;
-  color: #b153d2;
+  background: var(--ellipse-title-wrapper-bg-color);
+  color: var(--ellipse-title-wrapper-color);
 }
 .ellipse-title-wrapper h1 {
   font-family: "Manrope";
@@ -22,7 +22,7 @@
   line-height: 50px;
   text-align: center;
   text-transform: capitalize;
-  color: #263554;
+  color: var(--customBlue2);
 }
 .first-illustration-wrapper {
   display: grid;
@@ -37,7 +37,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #73809a;
+  color: var(--home-blog-description);
 }
 .first-illustration-wrapper h3 {
   font-family: "Poppins";
@@ -46,12 +46,12 @@
   font-size: 34px;
   line-height: 150%;
   text-transform: capitalize;
-  color: #263554;
+  color: var(--customBlue2);
   width: 422px;
 }
 .first-illustration-wrapper button {
   padding: 13px 24px;
-  background: #407bf2;
+  background: var(--home-blog-color);
   color: var(--white);
   border-radius: 5px;
   font-family: "Poppins";
@@ -83,9 +83,6 @@
 .ThirdIllustration {
   z-index: 2;
 }
-// .secondIllustration{
-//   z-index: 2;
-// }
 .first-illustration-wrapper:nth-child(3) {
   margin-top: 100px;
 }

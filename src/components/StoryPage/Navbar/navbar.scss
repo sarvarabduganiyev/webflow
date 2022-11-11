@@ -84,7 +84,7 @@ nav {
 }
 .accordion-button:focus {
   box-shadow: none;
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: var(----accordion-button-focus);
   border: none;
 }
 
@@ -96,11 +96,10 @@ nav {
 }
 .responsive-lists {
   font-family: "Manrope";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
-  color: #233456;
+  color: var(--inrtoTitle);
 }
 .responsive-lists:nth-child(2) {
   margin: 32px 0px;
@@ -125,7 +124,7 @@ nav {
   font-weight: 700;
   font-size: 32px;
   line-height: 120%;
-  background-color: white;
+  background-color: var(--white);
   color: var(--accColor);
 }
 .hr-line {
@@ -137,7 +136,7 @@ nav {
   font-weight: 700;
   font-size: 32px;
   line-height: 120%;
-  color: #233456;
+  color: var(----accordion-button-focus);
   padding: 16px 0px 40px 0px;
   border-top: 1px solid var(--graycustomcolor);
 }
@@ -167,6 +166,75 @@ nav {
 }
 .responsive-btns-box button:nth-child(3) {
   background-color: var(--customPurple);
+}
+.drop-down-menu-nav {
+  width: 697px;
+  padding: 12px;
+  border: none;
+  margin-top: 50px;
+  outline: none;
+  position: relative;
+}
+.arrow-drop-white {
+  position: absolute;
+  top: -8px;
+  left: 30px;
+}
+.drop-down-menu-nav h1 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--drop-down-menu-nav-h1-color);
+}
+.drop-down-menu-nav-grid-system {
+  display: grid;
+
+  grid-template-columns: calc(33% - 7px) calc(33% - 7px) calc(33% - 7px);
+  gap: 22px;
+}
+.drop-down-menu-nav-inner {
+  margin-top: 24px;
+}
+.drop-down-menu-nav-inner h3 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--customBlue);
+}
+.drop-down-menu-nav-inner p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 137%;
+  text-transform: capitalize;
+  color: var(--home-blog-description);
+}
+.nav-drop-down-bottom-content {
+  padding: 12px;
+  background-color: var(--homePageBg);
+  display: flex;
+  align-items: center;
+}
+.nav-drop-down-bottom-content h4 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--nav-drop-down-bottom-content-h4);
+}
+.nav-drop-down-bottom-content p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 137%;
+  text-transform: capitalize;
+  color: var(--home-blog-description);
+}
+.nav-drop-down-bottom-content-desc-wrapper {
+  margin-top: 15px;
+  margin-left: 15px;
 }
 // MEDIA
 @media (max-width: 1266px) {
@@ -228,7 +296,6 @@ nav {
 @media (max-width: 600px) {
   nav {
     padding: 24px 30px;
-    font-family: "Poppins";
   }
 }
 @media (max-width: 400px) {

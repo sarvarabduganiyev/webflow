@@ -2,8 +2,8 @@ import "./Challange.scss";
 import ChallangeImg from "../../../assets/img/challange.png";
 function Challange() {
   return (
-    <section className="challange-section container">
-      <div className="challange-wrapper">
+    <section className="challange-section ">
+      <div className="challange-wrapper container">
         <div className="challange-grid-first-item">
           <img src={ChallangeImg} alt="challange" />
         </div>

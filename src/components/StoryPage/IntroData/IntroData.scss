@@ -7,10 +7,9 @@
 
 .intro-data-inner {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 400;
   display: flex;
-  color: #535e6a;
+  color: var(-- --home-blog-description);
 }
 .intro-inner-hr {
   background-color: var(--customBlue);

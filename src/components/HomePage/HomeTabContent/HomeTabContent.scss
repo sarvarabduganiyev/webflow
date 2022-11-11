@@ -1,9 +1,5 @@
 .home-tab-content-wrapper {
-  background-image: radial-gradient(
-    50% 50% at 50% 50%,
-    #1f52bb 0%,
-    #3468d3 100%
-  );
+  background-image: var(--background-gradient);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -30,7 +26,7 @@
   width: 359px;
 }
 .home-page-tab-head-wrapper {
-  border-bottom: 1px solid #547dd1;
+  border-bottom: 1px solid var(--home-page-tab-head-wrapper-border);
   width: 470px;
   color: var(--white);
 }

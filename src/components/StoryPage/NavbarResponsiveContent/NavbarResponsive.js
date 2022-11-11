@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 
 function NavbarResponsive({ toggled, setToggle }) {
-  const [open, setOpen] = useState("1");
+  const [open, setOpen] = useState("");
   const toggle = (id) => {
     if (open === id) {
       setOpen();

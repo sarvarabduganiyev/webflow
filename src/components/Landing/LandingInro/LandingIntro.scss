@@ -1,0 +1,83 @@
+.landing-intro-wrapper {
+  background-image: url("../../../assets/img/LandingIntro.png");
+  min-height: 844px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  font-family: "Poppins";
+
+  position: relative;
+}
+.landing-intro-contents {
+  display: flex;
+  padding: 76px 50px 0px 50px;
+}
+.landing-intro-contents h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--white);
+}
+.landing-intro-contents p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.9;
+  width: 566px;
+  margin-top: 24px;
+}
+.landing-intro-btn-wrapper {
+  flex-direction: row;
+}
+.landing-intro-btn-wrapper button {
+  padding: 13px 18px;
+  background: var(--white);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.landing-intro-btn-wrapper button:nth-child(1) {
+  color: var(--customBlue2);
+}
+.landing-intro-btn-wrapper button:nth-child(2) {
+  background: var(--customBlue);
+  border: 1.5px solid var(--home-blog-color);
+  margin-left: 12px;
+  color: var(--white);
+  padding: 12px 18px;
+}
+.landing-intro-illustration-img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+@media (max-width: 991px) {
+  .landing-intro-illustration-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 630px) {
+  .landing-intro-contents p {
+    width: initial;
+  }
+}
+@media (max-width: 576px) {
+  .landing-intro-btn-wrapper {
+    flex-direction: column;
+  }
+  .landing-intro-btn-wrapper button {
+    width: 180px;
+  }
+  .landing-intro-btn-wrapper button:nth-child(2) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

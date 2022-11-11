@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -26,7 +27,41 @@
   --footerLineColor:rgba(59, 38, 84, 0.14);
   --homePageBg:#F2FAFF;
   --home-page-blue:#3367D2;
+  --sliderShadow: rgba(0, 0, 0, 0.08);
+  --slider-text: rgba(111, 125, 154, 0.35);
+  --custom-blue-color:#3569d4;
+  --slider-icon-path-color:rgba(111, 125, 154, 0.35);
+  --home-blog-color:#407bf2;
+  --home-blog-shadow:rgba(64, 123, 242, 0.2);
+  --home-page-blog-title-bg-color:#e0edfe;
+  --home-blog-first-grid-paragraph:#9098bb;
+  --home-blog-description:#73809a;
+  --ellipse-title-wrapper-bg-color:#ebe9fa;
+  --ellipse-title-wrapper-color:#b153d2;
+  --background-gradient:radial-gradient(
+    50% 50% at 50% 50%,
+    #1f52bb 0%,
+    #3468d3 100%
+  );;
+  --home-page-tab-head-wrapper-border:#547dd1;
+  --choise-title-wrapper:#eaf4fd;
+  --landing-brand-section-bg:#fafbff;
+  --merchant-intro-inner-card-shadow:rgba(98, 111, 180, 0.08);
+  --merchant-second-card-grid-color:#006eff;
+  --price-role-btn-wrapper-border:#e0edfe;
+  --price-annualy-active:radial-gradient(50% 50% at 50% 50%, #1f52bb 0%, #3468d3 100%);
+  --order-notification-text-wrapper-color:#27ae60;
+  --order-notification-text-color:#e4ffef;
+  --order-notification-text-shadow:3px 12px 50px rgba(98, 111, 180, 0.08);
+  --:rgba(98, 111, 180, 0.08);
+  --pricing-oreder-card-description:#868d9d;
+  --solution-content-bg:#293c64;
+  --accordion-button-focus:rgba(0, 0, 0, 0.125);
+  --drop-down-menu-nav-h1-color:#f2994a;
+  --nav-drop-down-bottom-content-h4:#183060;
+
 }
+
 button {
   outline: none;
   border: none;

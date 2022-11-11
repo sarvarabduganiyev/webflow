@@ -11,9 +11,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #407bf2;
+  color: var(--home-blog-color);
   background: #ecf2fe;
-  box-shadow: 0px 20px 60px rgba(64, 123, 242, 0.2);
+  box-shadow: 0px 20px 60px var(--home-blog-shadow);
   border-radius: 5px;
   padding: 2px 41px;
 }
@@ -24,7 +24,7 @@
   line-height: 57px;
   text-align: center;
   text-transform: capitalize;
-  color: #263554;
+  color: var(--customBlue2);
   margin-top: 10px;
 }
 .slider-card-title-wrapper p {
@@ -33,14 +33,14 @@
   font-size: 18px;
   line-height: 180%;
   text-align: center;
-  color: #73809a;
+  color: var(--home-blog-description);
   width: 700px;
 }
 // slider item style
 
 .home-slider-inner-wrapper {
-  background: #ffffff;
-  box-shadow: 3px 12px 50px rgba(0, 0, 0, 0.08);
+  background: var(--white);
+  box-shadow: 3px 12px 50px var(--sliderShadow);
   border-radius: 8px;
   height: 331px;
   padding: 75px 49px;
@@ -53,7 +53,7 @@
   letter-spacing: -1px;
   text-align: center;
   text-transform: capitalize;
-  color: #263554;
+  color: var(--customBlue2);
 }
 .home-slider-inner-wrapper {
   margin: 36px 0px;

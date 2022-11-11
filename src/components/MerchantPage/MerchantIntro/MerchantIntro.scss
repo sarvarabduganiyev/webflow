@@ -15,7 +15,7 @@
   line-height: 120%;
   text-align: center;
   letter-spacing: -1px;
-  color: #263554;
+  color: var(--customBlue2);
 }
 .merchant-intro-title-wrapper h1 span {
   font-weight: 700;
@@ -35,7 +35,7 @@
 .merchant-intro-inner-card {
   padding: 36px;
   background: var(--white);
-  box-shadow: 3px 12px 50px rgba(98, 111, 180, 0.08);
+  box-shadow: 3px 12px 50px var(merchant-intro-inner-card-shadow);
   border-radius: 8px;
 }
 .merchant-intro-inner-card:nth-child(even) {
@@ -46,7 +46,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  color: #263554;
+  color: var(--customBlue2);
   margin-top: 25px;
 }
 .merchant-intro-inner-card p {
@@ -55,7 +55,7 @@
   font-size: 16px;
   line-height: 150%;
   text-transform: capitalize;
-  color: #73809a;
+  color: var(--home-blog-description);
   margin-top: 16px;
 }
 

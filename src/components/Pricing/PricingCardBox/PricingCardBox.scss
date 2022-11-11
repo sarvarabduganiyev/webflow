@@ -2,7 +2,7 @@
   background-image: url("../../../assets/img/full-pricing-blue-img.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f2faff;
+  background-color: var(--homePageBg);
   background-size: 100% 100%;
   min-height: 1500px;
   padding: 76px 150px 80px 150px;
@@ -16,15 +16,15 @@
   line-height: 120%;
   text-align: center;
   letter-spacing: -1px;
-  color: var(--white);
+  color: var(--white) !important;
   width: 700px;
 }
 .pricing-title span {
   font-weight: 600;
 }
 .price-role-btn-wrapper {
-  background: #e0edfe;
-  border: 1px solid #c7e2f3;
+  background: var(--price-role-btn-wrapper-border);
+  border: 1px solid var(--price-role-btn-wrapper-border);
   border-radius: 52px;
   padding: 7px;
   margin-top: 40px;
@@ -37,7 +37,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: capitalize;
-  color: #3b72e0;
+  color: var(--customBlue);
   border-radius: 52px;
 }
 
@@ -57,19 +57,18 @@
 }
 .order-notification-text-wrapper h4:nth-child(1) {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
-  color: #ffffff;
+  color: var(--white);
 }
 .order-notification-text-wrapper h4:nth-child(1) span {
   font-weight: 700;
 }
 .order-notification-text-wrapper h4:nth-child(2) {
   padding: 7px 18px;
-  color: #27ae60;
-  background: #e4ffef;
+  color: var(--order-notification-text-wrapper-color);
+  background: var(--order-notification-text-color);
   border: 1px solid #c7f3d3;
   border-radius: 52px;
   margin-left: 25px;
@@ -90,12 +89,12 @@
   font-size: 14px;
   line-height: 21px;
   margin: 32px 0px;
-  color: #233456;
+  color: var(--inrtoTitle);
 }
 .pricing-oreder-card {
   padding: 32px 30px 22px 30px;
   background: var(--white);
-  box-shadow: 3px 12px 50px rgba(98, 111, 180, 0.08);
+  box-shadow: 3px 12px 50px var(--order-notification-text-shadow);
   border-radius: 8px;
 }
 .pricing-oreder-card h1 {
@@ -103,16 +102,16 @@
   font-size: 34px;
   line-height: 100%;
   text-transform: capitalize;
-  color: #263554;
+  color: var(--customBlue2);
   text-align: center;
 }
 .pricing-oreder-card-first-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #27ae60;
-  border: 1px solid #27ae60;
-  background: #ffffff;
+  color: var(--order-notification-text-wrapper-color);
+  border: 1px solid var(--order-notification-text-wrapper-color);
+  background: var(--white);
   box-shadow: 3px 12px 50px rgba(98, 111, 180, 0.08);
   border-radius: 8px;
   padding: 12px 0px;
@@ -126,10 +125,10 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #73809a;
+  color: var(--home-blog-description);
   opacity: 0.7;
-  border-top: 1px solid #868d9d;
-  border-bottom: 1px solid #868d9d;
+  border-top: 1px solid var(--pricing-oreder-card-description);
+  border-bottom: 1px solid var(--pricing-oreder-card-description);
 }
 .price-order-chance-wrapper {
   display: flex;
@@ -139,7 +138,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #263554;
+  color: var(--customBlue2);
   margin-left: 5px;
 }
 .pricing-oreder-card-last-button {
@@ -149,7 +148,7 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--white);
-  background: #3b72e0;
+  background: var(--customBlue);
   border-radius: 4px;
   margin-top: 24px;
 }

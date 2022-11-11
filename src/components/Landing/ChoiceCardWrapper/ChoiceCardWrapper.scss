@@ -1,0 +1,81 @@
+.choise-title-wrapper {
+  font-family: "Poppins";
+  padding: 160px 320px 170px 320px;
+  background-color: var(--choise-title-wrapper);
+  min-height: 1200px;
+}
+.choise-title-wrapper h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--customBlue);
+}
+
+.choise-description {
+  width: 542px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--accColor);
+  margin-top: 24px;
+}
+.choise-title-wrapper p span {
+  color: var(--customBlue);
+  font-weight: 700;
+}
+.choise-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px 32px;
+}
+.choise-card h4 {
+  margin-top: 196px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: var(--inrtoTitle);
+}
+.choise-card p {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: var(--accColor);
+}
+.choise-card-wrapper {
+  display: grid;
+  grid-template-columns: calc(50% - 25px) calc(50% - 25px);
+  gap: 30px;
+  margin-top: 32px;
+}
+
+@media (max-width: 1280px) {
+  .choise-title-wrapper {
+    padding: 160px 100px 170px 100px;
+  }
+}
+@media (max-width: 991px) {
+  .choise-title-wrapper {
+    padding: 160px 50px 170px 50px;
+  }
+}
+@media (max-width: 991px) {
+  .choise-title-wrapper {
+    padding: 100px 30px 100px 30px;
+  }
+  .choise-card-wrapper {
+    grid-template-columns: 100%;
+    margin-top: 32px;
+  }
+  .choise-description {
+    width: initial;
+  }
+  .choise-title-wrapper h1 {
+    text-align: center;
+  }
+}

@@ -1,10 +1,10 @@
 .home-animate-slider {
   padding: 100px 0px 100px 130px;
-  background-color: #f2faff;
+  background-color: var(--homePageBg);
 }
 .home-page-animated-slider-card-box {
   background: var(--white);
-  box-shadow: 3px 12px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 3px 12px 50px var(--sliderShadow);
   border-radius: 8px;
   width: 585px;
   padding: 57px 64px;
@@ -20,7 +20,6 @@
 .home-animated-swiper-next {
   width: 60px;
   height: 60px;
-  // background-color: red;
 }
 .home-animated-swiper-next {
   margin-left: 18px;
@@ -32,7 +31,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 32px;
-  color: #263554;
+  color: var(--customBlue2);
 }
 .home-page-animated-slider-card-box img:nth-child(2) {
   margin-top: 40px;
@@ -42,34 +41,34 @@
   width: 585px;
 }
 .home-animate-slider .swiper-slide .home-page-animated-slider-card-text-box p {
-  color: rgba(111, 125, 154, 0.35);
+  color: var(--slider-text);
 }
 .home-animate-slider
   .swiper-slide
   .home-page-animated-slider-card-text-box
   svg
   path {
-  fill: rgba(111, 125, 154, 0.35);
+  fill: var(--slider-text);
 }
 .home-animate-slider
   .swiper-slide-active
   .home-page-animated-slider-card-text-box
   svg
   path {
-  fill: #3569d4;
+  fill: var(--custom-blue-color);
 }
 .home-animate-slider
   .swiper-slide-active
   .home-page-animated-slider-card-text-box
   p {
-  color: #263554;
+  color: var(--customBlue2);
 }
 .home-animate-slider .swiper-slide .slider-logo-icon path {
-  fill: rgba(111, 125, 154, 0.35);
+  fill: var(slider-icon-path-color);
 }
 
 .home-animate-slider .swiper-slide-active .slider-logo-icon path {
-  fill: #263554;
+  fill: var(--customBlue2);
 }
 
 .home-animated-btn-roles-wrapper {

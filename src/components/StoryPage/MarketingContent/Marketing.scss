@@ -16,17 +16,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #407bf2;
+  color: var(--home-blog-color);
   padding: 2px 27px;
   display: inline-block;
-  background-color: #293c64;
-  box-shadow: 0px 20px 60px rgba(64, 123, 242, 0.2);
+  background-color: var(--solution-content-bg);
+  box-shadow: 0px 20px 60px var(--home-blog-shadow);
   border-radius: 5px;
   margin-top: 50px;
 }
 .marketing-content-title {
   font-family: "Manrope";
-  font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 55px;
@@ -81,7 +80,6 @@
 }
 .marketingBanner h1 {
   font-family: "Manrope";
-  font-style: normal;
   font-weight: 700;
   font-size: 50px;
   line-height: 120%;
@@ -101,12 +99,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 60px var(----home-blog-shadow);
   border-radius: 5px;
 }
 .marketingBanner button:nth-child(1) {
-  color: #3b72e0;
-  background-color: white;
+  color: var(--customBlue);
+  background-color: var(--white);
 }
 .marketingBanner button:nth-child(2) {
   color: var(--white);
@@ -158,9 +156,7 @@
     flex-direction: column;
     margin-top: 39px;
   }
-  // .marketingBanner-btn-box button {
-  //   width: 100%;
-  // }
+
   .marketingBanner button:nth-child(2) {
     color: var(--white);
     border: 1px solid var(--white);

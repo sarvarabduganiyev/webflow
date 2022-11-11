@@ -1,5 +1,5 @@
 .home-page-blog-wrapper {
-  background-color: #f2faff;
+  background-color: var(--homePageBg);
   padding: 130px 150px 50px 130px;
   font-family: "Poppins";
 }
@@ -8,11 +8,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #407bf2;
+  color: var(--home-blog-color);
   padding: 2px 15px;
   border-radius: 5px;
-  background-color: #e0edfe;
-  box-shadow: 0px 20px 60px rgba(64, 123, 242, 0.2);
+  background-color: var(--home-page-blog-title-bg-color);
+  box-shadow: 0px 20px 60px var(--home-blog-shadow);
 }
 .home-page-blog-title-wrapper h1 {
   font-family: "Manrope";
@@ -21,7 +21,7 @@
   line-height: 57px;
   text-align: center;
   text-transform: capitalize;
-  color: #263554;
+  color: var(--customBlue2);
   margin-top: 10px;
 }
 .home-blog-grid-system {
@@ -39,26 +39,25 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #9098bb;
+  color: var(--home-blog-first-grid-paragraph);
   opacity: 0.7;
   margin-top: 30px;
 }
 .home-blog-first-grid-section h1 {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
   display: flex;
   align-items: center;
-  color: #183b56;
+  color: var(--footerColor2);
 }
 
 .home-blog-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #73809a;
+  color: var(--home-blog-description);
   opacity: 0.7;
 }
 .home-blog-grid-card-wrapper {
@@ -81,12 +80,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #9098bb;
+  color: var(--home-blog-first-grid-paragraph);
   opacity: 0.7;
 }
 .home-blog-grid-card-wrapper > div h5 {
   font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;

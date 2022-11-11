@@ -1,0 +1,50 @@
+.landing-brand-section {
+  padding: 80px 190px 100px 190px;
+  background-color: var(--landing-brand-section-bg);
+}
+.landing-brand-section h5 {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 5.1px;
+  color: var(--customBlue2);
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+.landing-brand-logo-wrapper {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .landing-brand-section {
+    padding: 80px 100px 100px 100px;
+  }
+}
+@media (max-width: 991px) {
+  .landing-brand-section {
+    padding: 80px 50px 100px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .landing-brand-section {
+    padding: 55px 30px 74px 30px;
+  }
+  .landing-brand-logo-wrapper {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 676px) {
+  .landing-brand-logo-wrapper {
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing-brand-logo-wrapper img {
+    margin-top: 50px;
+  }
+  .landing-brand-logo-wrapper {
+    margin-top: 0px;
+  }
+}

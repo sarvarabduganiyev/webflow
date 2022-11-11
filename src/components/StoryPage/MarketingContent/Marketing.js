@@ -53,23 +53,22 @@ const data = [
 function Marketing() {
   return (
     <section>
-      <div className="marketing-content-box container">
-        <div className="marketing-title-content">
+      <div className="marketing-content-box">
+        <div className="marketing-title-content container">
           <button className="solution-content">Solution</button>
           <h1 className="marketing-content-title">
             With BirdsAI Marketing, HBFace has enjoyed:
           </h1>
         </div>
-        <div className="marketing-cards-wrapper">
+        <div className="marketing-cards-wrapper container">
           {data.map(({ text, icon, spanText }) => (
             <MarketingCardInner text={text} icon={icon} spanText={spanText} />
           ))}
         </div>
-        <div className="marketing-help-btn-box center-middle">
+        <div className="marketing-help-btn-box center-middle container">
           <button>Learn How BirdsAI Can help you</button>
         </div>
       </div>
-      <MarketingBanner />
     </section>
   );
 }

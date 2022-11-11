@@ -22,18 +22,18 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 120%;
-  color: #263554;
+  color: var(--customBlue2);
 }
 .merchant-second-card-grid-first-section h1 span {
   font-weight: 700;
-  color: #3b72e0;
+  color: var(--customBlue);
 }
 .merchant-second-card-grid-first-section p {
   font-weight: 400;
   font-size: 16px;
   line-height: 137%;
   text-transform: capitalize;
-  color: #73809a;
+  color: var(--home-blog-description);
   width: 437px;
   margin-top: 16px;
 }
@@ -42,7 +42,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  color: #006eff;
+  color: var(--merchant-second-card-grid-color);
 }
 .merchant-second-card-grid-first-section button:hover {
   text-decoration: underline;
