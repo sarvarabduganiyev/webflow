@@ -73,10 +73,11 @@ function HomeAnimatedSlider() {
           modules={[Navigation]}
           className="swiper-animated-home-wrapper"
         >
-          {animatedSliderData.map(({ text, firstImg, secondImg }) => (
+          {animatedSliderData.map(({ text, firstImg, secondImg }, idx) => (
             <SwiperSlide>
               <HomeAnimatedSliderInner
                 text={text}
+                key={idx}
                 firstImg={firstImg}
                 secondImg={secondImg}
               />

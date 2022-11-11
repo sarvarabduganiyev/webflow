@@ -1,7 +1,7 @@
 .intro-bg {
   background-image: url("../../../assets/img/introBg.png");
-  background-position: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100% 100%;
   min-height: 800px;
 }
@@ -52,9 +52,16 @@
 @media (max-width: 422px) {
   .intro-bg {
     background-image: url("../../../assets/img/mobileIntro.png");
-    min-height: 631px;
+    min-height: 566px;
   }
   .intro-content h1 {
-    font-size: 29px;
+    font-size: 27px;
+    line-height: 120%;
+  }
+  .intro-content img {
+    width: 113px;
+  }
+  .intro-content {
+    padding-top: 20px;
   }
 }

@@ -53,8 +53,9 @@ function HomeTabContent() {
               <h1>Why Choose BirdsAI Marketing</h1>
             </div>
             <div className="home-page-tab-head-wrapper">
-              {tabInnterText.map(({ text }) => (
+              {tabInnterText.map(({ text }, idx) => (
                 <button
+                  key={idx}
                   className={
                     tab === text
                       ? "home-page-tab-active"

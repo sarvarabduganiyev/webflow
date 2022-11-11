@@ -64,8 +64,13 @@ function HomeBlogCard() {
             </div>
           </div>
           <div>
-            {HomeBlogSmallCardData.map(({ date, title, img }) => (
-              <HomeBlogSmallCard date={date} title={title} img={img} />
+            {HomeBlogSmallCardData.map(({ date, title, img }, idx) => (
+              <HomeBlogSmallCard
+                date={date}
+                title={title}
+                img={img}
+                key={idx}
+              />
             ))}
           </div>
         </div>

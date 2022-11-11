@@ -59,9 +59,9 @@ function HomeSlider() {
             modules={[Autoplay]}
             className="one-home-card-slide-wrapper"
           >
-            {sliderInnerData.map(({ title, icon }) => (
+            {sliderInnerData.map(({ title, icon }, idx) => (
               <SwiperSlide>
-                <HomeSliderInner title={title} icon={icon} />
+                <HomeSliderInner title={title} icon={icon} key={idx} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -75,9 +75,9 @@ function HomeSlider() {
             spaceBetween={30}
             className="two-home-card-slide-wrapper"
           >
-            {sliderInnerData.map(({ title, icon }) => (
+            {sliderInnerData.map(({ title, icon }, idx) => (
               <SwiperSlide>
-                <HomeSliderInner title={title} icon={icon} />
+                <HomeSliderInner title={title} icon={icon} key={idx} />
               </SwiperSlide>
             ))}
           </Swiper>

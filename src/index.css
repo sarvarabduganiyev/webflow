@@ -9,6 +9,7 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
 :root {
   --customPurple: #b99df1;
   --white: #fff;
@@ -58,7 +59,9 @@
   --solution-content-bg:#293c64;
   --accordion-button-focus:rgba(0, 0, 0, 0.125);
   --drop-down-menu-nav-h1-color:#f2994a;
+  --label-color:#1d436d;
   --nav-drop-down-bottom-content-h4:#183060;
+  --blue-custom-color:#626fb4;
 
 }
 

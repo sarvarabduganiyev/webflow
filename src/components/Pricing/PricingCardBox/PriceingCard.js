@@ -8,8 +8,8 @@ function PriceingCard({ title, button, titleWord, desc, orderChance }) {
       <p className="price-order-title-word">{titleWord}</p>
       <p className="pricing-oreder-card-description">{desc}</p>
       <div className="price-order-chance-wrapper">
-        {orderChance.map((item) => (
-          <div className="price-order-chance">
+        {orderChance.map((item, idx) => (
+          <div key={idx} className="price-order-chance">
             <PricingCheck />
             <p>{item}</p>
           </div>

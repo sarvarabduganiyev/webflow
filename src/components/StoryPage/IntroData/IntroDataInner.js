@@ -1,5 +1,4 @@
 function IntroDataInner({ title, desc }) {
-  console.log(title);
   return (
     <div className="intro-data-inner">
       <span className="intro-inner-hr"></span>

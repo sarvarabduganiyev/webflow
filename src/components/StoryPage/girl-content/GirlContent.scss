@@ -1,9 +1,9 @@
 .girl-content-grid {
-  padding: 0px 160px;
+  padding: 0px 100px 50px 100px;
   display: grid;
-  grid-template-columns: calc(50% - 50px) calc(50% - 50px);
+  grid-template-columns: repeat(2, 1fr);
   font-family: "Poppins";
-  gap: 100px;
+  gap: 131px;
 }
 .girl-content-grid h1 {
   font-style: normal;
@@ -24,21 +24,33 @@
   color: var(--home-blog-description);
 }
 .girl-content-grid img {
-  width: 400px;
-  transform: translateY(-150px);
+  width: 100%;
+  height: auto;
+  transform: translateY(-250px);
 }
-@media (max-width: 1240px) {
+@media (max-width: 1390px) {
   .girl-content-grid {
-    padding: 0px 100px;
     grid-template-columns: calc(50% - 25px) calc(50% - 25px);
     gap: 50px;
   }
 }
-@media (max-width: 1064px) {
-  .girl-content-grid img {
-    width: 350px;
+@media (max-width: 1300px) {
+  .girl-content-grid {
+    padding: 0px 100px;
   }
-  .girl-content-grid p {
+  .girl-content-grid img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-200px);
+  }
+}
+@media (max-width: 1182px) {
+  .girl-content-grid img {
+    transform: translateY(-140px);
+  }
+}
+@media (max-width: 1064px) {
+    .girl-content-grid p {
     font-size: 15px;
   }
 }

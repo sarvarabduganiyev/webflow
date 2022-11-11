@@ -92,8 +92,9 @@ function PricingCardBox() {
         </div>
         <div className="container pricing-order-card-wrapper">
           {orderCardData.map(
-            ({ title, button, titleWord, desc, orderChance }) => (
+            ({ title, button, titleWord, desc, orderChance }, idx) => (
               <PriceingCard
+                key={idx}
                 title={title}
                 button={button}
                 titleWord={titleWord}

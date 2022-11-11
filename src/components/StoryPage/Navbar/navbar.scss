@@ -15,6 +15,7 @@ nav {
   background-color: transparent;
   color: var(--black);
   border: none;
+  padding: 0;
 }
 .dropdown-icon:hover,
 .dropdown-icon:active,
@@ -236,6 +237,79 @@ nav {
   margin-top: 15px;
   margin-left: 15px;
 }
+.modalNavbar {
+  background: #ffffff;
+  box-shadow: 3px 12px 55px var(--blue-custom-color);
+  border-radius: 8px;
+  padding: 20px 16px;
+  margin-top: 122px;
+  position: relative;
+}
+.modal-close-icon {
+  position: absolute;
+  top: -75px;
+  right: 0;
+  background: var(--white);
+  box-shadow: 3px 12px 55px var(--blue-custom-color);
+  border-radius: 50%;
+  padding: 8px;
+}
+.form-modal-btn {
+  padding: 8px 0px;
+  margin-top: 16px;
+  width: 100%;
+  background-color: var(--customBlue);
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--white);
+}
+.modalNavbar h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--customBlue2);
+}
+.modalNavbar .modal-content {
+  border: none;
+}
+.modal-input-label-wrapper {
+  width: 100%;
+}
+.modal-input-label-wrapper {
+  margin-top: 16px;
+}
+.modal-input-label-wrapper input {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  padding-left: 20px;
+  outline: none;
+  background: #fbfbfb;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+}
+// .modal-input-label-wrapper {
+//   display: flex;
+// }
+.modal-input-label-wrapper label {
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  line-height: 120%;
+  color: var(--label-color);
+}
+.modal-input-label-wrapper svg {
+  margin-left: 2px;
+  margin-bottom: 7px;
+}
+
 // MEDIA
 @media (max-width: 1266px) {
   nav {
@@ -247,6 +321,22 @@ nav {
   .nav-middle-content ul li {
     margin-left: 20px;
   }
+
+  .nav-btns-box button {
+    padding: 8px 15px;
+  }
+  .nav-middle-content ul {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 1111px) {
+  .nav-middle-content ul li {
+    margin-left: 12px;
+  }
+  .nav-middle-content .dropdown-toggle .dropdown-toggle {
+    padding: 0;
+    background-color: red;
+  }
 }
 @media (max-width: 1086px) {
   .nav-btns-box button {
@@ -255,19 +345,30 @@ nav {
   .nav-middle-content ul {
     margin-top: 16px;
   }
+  .logo-nav-img {
+    width: 170px;
+  }
 }
 @media (max-width: 1028px) {
-  .logo-nav-img {
-    width: 187px;
-  }
   .nav-middle-content ul li {
     margin-left: 10px;
+  }
+  .nav-btns-box button {
+    padding: 8px 15px;
+    font-size: 14px;
   }
 }
 @media (max-width: 991px) {
   .burger-menu-wrapper {
     display: block;
     width: 50px;
+  }
+
+  .nav-btns-box button {
+    font-size: 16px;
+  }
+  .logo-nav-img {
+    width: 187px;
   }
   .nav-middle-content,
   .nav-btns-box {

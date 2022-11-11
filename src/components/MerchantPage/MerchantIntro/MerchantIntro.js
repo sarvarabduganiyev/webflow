@@ -50,8 +50,9 @@ function MerchantIntro() {
             </p>
           </div>
           <div className="merchant-card-grid-wrapper">
-            {merchantData.map(({ img, title, description }) => (
+            {merchantData.map(({ img, title, description }, idx) => (
               <MerchantIntroInner
+                key={idx}
                 img={img}
                 title={title}
                 description={description}

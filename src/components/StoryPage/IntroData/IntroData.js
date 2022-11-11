@@ -21,8 +21,8 @@ const data = [
 function IntroData() {
   return (
     <div className="intro-data container">
-      {data.map(({ title, desc }) => (
-        <IntroDataInner title={title} desc={desc} />
+      {data.map(({ title, desc }, idx) => (
+        <IntroDataInner title={title} key={idx} desc={desc} />
       ))}
     </div>
   );

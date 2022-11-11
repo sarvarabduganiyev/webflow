@@ -7,7 +7,6 @@ import {
   MarketingIconSix,
 } from "../../../assets/svg/icons";
 import "./Marketing.scss";
-import MarketingBanner from "./MarketingBanner";
 const MarketingCardInner = ({ text, icon, spanText }) => {
   return (
     <div className="maketing-card-inner">
@@ -52,20 +51,25 @@ const data = [
 ];
 function Marketing() {
   return (
-    <section>
-      <div className="marketing-content-box">
-        <div className="marketing-title-content container">
+    <section className="marketing-content-box">
+      <div className="container">
+        <div className="marketing-title-content ">
           <button className="solution-content">Solution</button>
           <h1 className="marketing-content-title">
             With BirdsAI Marketing, HBFace has enjoyed:
           </h1>
         </div>
-        <div className="marketing-cards-wrapper container">
-          {data.map(({ text, icon, spanText }) => (
-            <MarketingCardInner text={text} icon={icon} spanText={spanText} />
+        <div className="marketing-cards-wrapper">
+          {data.map(({ text, icon, spanText }, idx) => (
+            <MarketingCardInner
+              text={text}
+              icon={icon}
+              key={idx}
+              spanText={spanText}
+            />
           ))}
         </div>
-        <div className="marketing-help-btn-box center-middle container">
+        <div className="marketing-help-btn-box center-middle">
           <button>Learn How BirdsAI Can help you</button>
         </div>
       </div>

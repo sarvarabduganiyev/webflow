@@ -56,15 +56,18 @@ function Footer() {
         </div>
         <div className="footer-section-link-wrapper">
           {footerLinkData.map(
-            ({
-              firstLink,
-              secondLink,
-              thirdLink,
-              fourthLink,
-              fifthLink,
-              title,
-            }) => (
-              <div className="all-links-wrappeer">
+            (
+              {
+                firstLink,
+                secondLink,
+                thirdLink,
+                fourthLink,
+                fifthLink,
+                title,
+              },
+              idx
+            ) => (
+              <div key={idx} className="all-links-wrappeer">
                 <h3>{title}</h3>
                 <ul>
                   <li>
