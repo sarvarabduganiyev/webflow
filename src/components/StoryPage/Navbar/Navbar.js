@@ -101,16 +101,22 @@ function Navbar() {
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </li>
-              <li>About</li>
-              <li>Blog</li>
+              <li>
+                <Link to={"/merchant"}>Merchant</Link>
+              </li>
+              <li>
+                <Link to={"/landing"}>Landing</Link>
+              </li>
               <li>
                 <Link to={"/price"}>Pricing</Link>
+              </li>
+              <li>
+                <Link to={"/storypage"}>Storypage</Link>
               </li>
             </ul>
           </div>
           <div className="nav-btns-box">
             <button onClick={() => toggleFunc()}>Schedule a Demo</button>
-            <button color="primary">Start free trial</button>
             <button>Sign In</button>
           </div>
           <div className="burger-menu-wrapper">
